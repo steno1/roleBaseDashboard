@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import "./Profile.css"; // Notice the filename case matches
+import "./Profile.css"; 
 
 const Profile: React.FC = () => {
   return (
