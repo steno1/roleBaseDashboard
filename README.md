@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+🎯 Role-Based Dashboard (React + TypeScript)
+A modular Role-Based Dashboard application built with React + TypeScript, featuring:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Protected routes based on user roles (Admin, Editor, Viewer)
+Clean folder structure
+Simple responsive UI
+State management with React Context API
+Authentication simulation
+Normal CSS (No Tailwind, no external CSS frameworks)
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔐 Role-Based Access Control (RBAC)
+Admin, Editor, and Viewer roles with different permissions and UI components.
 
-## Expanding the ESLint configuration
+🎨 Clean & Responsive UI
+Normal CSS styling (no Tailwind), easily customizable, and mobile-friendly.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+⚛️ React + TypeScript
+Strongly typed, modern React project structure.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🛡️ Protected Routes
+Unauthorized users are redirected to login or home based on their role.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+📁 Project Structure
+css
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+src/
+├── components/
+│   ├── Dashboard.tsx
+│   └── Navbar.tsx
+├── context/
+│   └── AuthContext.tsx
+├── pages/
+│   ├── Home.tsx
+│   ├── Login.tsx
+│   └── NotFound.tsx
+├── routes/
+│   └── ProtectedRoute.tsx
+├── App.tsx
+├── main.tsx
+└── index.css
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+🛠️ Getting Started
+1️⃣ Clone the repository:
+
+git clone https://github.com/steno1/roleBaseDashboard.git
+cd role-based-dashboard
+2️⃣ Install dependencies:
+
+npm install
+3️⃣ Start the development server:
+
+npm run dev
+
+📝 Tech Stack
+React
+TypeScript
+React Router
+Context API
+Vite
+Normal CSS 
+
+
+🙌 Contributing
+Feel free to fork, open issues, or submit pull requests if you'd like to improve or extend the project!
+
