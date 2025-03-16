@@ -14,7 +14,7 @@ Normal CSS (No Tailwind, no external CSS frameworks)
 Admin, Editor, and Viewer roles with different permissions and UI components.
 
 🎨 Clean & Responsive UI
-Normal CSS styling (no Tailwind), easily customizable, and mobile-friendly.
+Normal CSS styling and mobile-friendly.
 
 ⚛️ React + TypeScript
 Strongly typed, modern React project structure.
