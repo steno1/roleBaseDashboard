@@ -1,0 +1,14 @@
+.dashboardContent {
+    padding: 2rem;
+    background-color: #e8f4f8;
+    min-height: 100vh;
+  }
+  
+  .dashboardContent h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .dashboardContent p {
+    font-size: 1.2rem;
+    color: #333;
+  }
