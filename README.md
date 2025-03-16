@@ -23,7 +23,7 @@ Strongly typed, modern React project structure.
 Unauthorized users are redirected to login or home based on their role.
 
 📁 Project Structure
-css
+
 
 src/
 ├── components/
